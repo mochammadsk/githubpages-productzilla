@@ -825,7 +825,8 @@ footer .right {
   font-family: "octicons";
   src: url("octicons.eot");
   src: url("octicons.eot#iefix") format("embedded-opentype"),
-    url("octicons.woff") format("woff"), url("octicons.ttf") format("truetype"),
+    url("./font/octicons.woff") format("woff"),
+    url("octicons.ttf") format("truetype"),
     url("octicons.svg#octicons") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -887,4 +888,22 @@ footer .right {
   width: 8em;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 414px) {
+  section {
+    display: flex;
+  }
+
+  .next-steps wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px 0;
+    -webkit-transition: opacity 0.8s ease-in-out 0s;
+    -moz-transition: opacity 0.8s ease-in-out 0s;
+    -ms-transition: opacity 0.8s ease-in-out 0s;
+    -o-transition: opacity 0.8s ease-in-out 0s;
+    transition: opacity 0.8s ease-in-out 0s;
+  }
 }
